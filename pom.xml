@@ -8,7 +8,7 @@
 		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hundae</groupId>
+	<groupId>com.hundaemon</groupId>
 	<artifactId>gw2lilhelpers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gw2lilhelpers</name>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>22</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,7 +40,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.jrfom</groupId>
+			<artifactId>GW2-API-Client</artifactId>
+			<version>0.1</version> <!-- or whatever version you desire -->
+		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>jsumners-github-releases</id>
+			<url>https://github.com/jsumners/mvn-repo/raw/master/releases/</url>
+		</repository>
+		<repository>
+			<id>jsumners-github-snapshots</id>
+			<url>https://github.com/jsumners/mvn-repo/raw/master/snapshots/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
